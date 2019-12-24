@@ -3086,28 +3086,28 @@ h3 {
 
 /* line 16, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */
 .contact-info__icon i, .contact-info__icon span {
-  color: #8f9195;
+  color: #DB9A64;
   font-size: 27px;
 }
 
 /* line 24, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */
 .contact-info .media-body h3 {
-  font-size: 16px;
+  font-size: 19px;
   margin-bottom: 0;
+  font-weight: 550;
   font-size: 16px;
-  color: #2a2a2a;
+  color: #fff;
 }
 
 /* line 30, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */
 .contact-info .media-body h3 a:hover {
-  color: #ff5e13;
+  color: #fff;
 }
 
 /* line 36, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */
 .contact-info .media-body p {
-  color: #8a8a8a;
+  color: #fff;
 }
-
 /*=================== contact banner end ====================*/
 /*=================== contact form start ====================*/
 /* line 45, ../../Arafath/CL/Cl November/228. Resume-02/HTML/scss/_contact.scss */
