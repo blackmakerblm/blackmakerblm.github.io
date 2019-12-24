@@ -17,7 +17,7 @@
     $subject = "You have a message from your Bitmap Photography.";
 
     $logo = 'img/logo.png';
-    $link = '#';
+    $link = 'https://blackmakerblm.github.io';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
@@ -33,8 +33,43 @@
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
 
-    $send = mail("alioubah571@gmail.com", $subject, $body, $headers);
-    }
+    use PHPMailer\PHPMailer\PHPMailer;
+	use PHPMailer\PHPMailer\SMTP;
+	use PHPMailer\PHPMailer\Exception;
+
+// Load Composer's autoloader
+	require 'vendor/autoload.php';
+
+// Instantiation and passing `true` enables exceptions
+	$mail = new PHPMailer(true);
+
+	try {
+  
+    $mail->SMTPDebug = 1;                      
+    $mail->isSMTP();                                            
+    $mail->Host       = 'smtp.gmail.com';                    
+    $mail->SMTPAuth   = true;                                   
+    $mail->Username   = 'alioubah571@gmail.com';                    
+    $mail->Password   = 'workedatkatawal';                              
+    $mail->SMTPSecure = 'tls';         
+    $mail->Port       = 587;                                   
+    
+    $mail->setFrom('from@example.com', 'bLm');
+    $mail->addAddress('alioubah571@gmail.com', 'Blacky');     
+
+
+    $mail->isHTML(true);                                  
+    $mail->Subject = $subject;
+    $mail->Body    = $body;
+    
+    $mail->send();
+    echo 'Votre message a bien été envoyé';
+	} catch (Exception $e) {
+	    echo "Erreur: {$mail->ErrorInfo}";
+	}
+	header("Location: index.html");
+	exit();
+	    }
     
 
 ?>
