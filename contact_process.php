@@ -1,5 +1,5 @@
 <?php
-    if ($_POST) {
+
     	
     $to = "alioubah571@gmail.com";
     $from = $_POST['email'];
@@ -33,7 +33,7 @@
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
 
-    use PHPMailer\PHPMailer\PHPMailer;
+        use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\SMTP;
 	use PHPMailer\PHPMailer\Exception;
 
@@ -69,7 +69,3 @@
 	}
 	header("Location: index.html");
 	exit();
-	    }
-    
-
-?>
