@@ -20,7 +20,7 @@ on fait la moyenne de cet attribut des K plus proches voisins.
 donnera pour la Somalie( Tunisie,Soudan sud,Bénin et Libye) et pour le Soudan du
 sud(Zimbabwe,Bénin,Tchad et le Mali).On aura donc pour le Soudan du Sud et Somalie ce tableau
 
-![](assets/images/clustering/donnees.png)
+![](assets/assets/images/clustering/donnees.png)
 
 Les données en rouge sont les données remplaçantes.
 
