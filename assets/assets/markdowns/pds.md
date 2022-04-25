@@ -42,19 +42,19 @@ Les missions du maître d’oeuvres sont les suivantes:
 ### Livrables de sortie
 | Livrable      | Phase | Auteur     |
 | :---        |    :----:   |          ---: |
-| Conception      | Conception       | ALIOU&CARL   |
-| Etude technique   | Etude préalable        | ALIOU&CARL      |
-| Module client      | Réalisation       | ALIOU&CARL    |
-| Module vendeur   | Réalisation        | ALIOU&CARL        |
-| Module agent   | Réalisation       | ALIOU&CARL    |
-| Module comptes   | Réalisation        |ALIOU&CARL   |
-| Module transactions      | Réalisation       | ALIOU&CARL  |
-| Module  code QR   | Réalisation        | ALIOU&CARL    |
-| Module  authentification   | Réalisation        | ALIOU&CARL    |
-| Module rôles et permissions     | Réalisation       | ALIOU&CARL    |
-| Interfaces graphiques   | Réalisation        | ALIOU&CARL      |
-| Application fonctionnelle | Deploiment     | ALIOU&CARL    |
-| Manuel technique  | Deploiment        | ALIOU&CARL        |
+| Conception      | Conception       | CARL&MOI   |
+| Etude technique   | Etude préalable        | CARL&MOI      |
+| Module client      | Réalisation       | CARL&MOI   |
+| Module vendeur   | Réalisation        | CARL&MOI       |
+| Module agent   | Réalisation       | CARL&MOI    |
+| Module comptes   | Réalisation        |CARL&MOI   |
+| Module transactions      | Réalisation       | CARL&MOI  |
+| Module  code QR   | Réalisation        | CARL&MOI   |
+| Module  authentification   | Réalisation        | CARL&MOI    |
+| Module rôles et permissions     | Réalisation       | CARL&MOI    |
+| Interfaces graphiques   | Réalisation        | CARL&MOI      |
+| Application fonctionnelle | Deploiment     | CARL&MOI    |
+| Manuel technique  | Deploiment        | CARL&MOI        |
 ## Etude de l’existant
 
 Le projet PDS s’inscrit dans une vision que partagent plusieurs acteurs de la finance, à savoir l’inclusion financière. En ce qui concerne le cas spécifique de PDS, il compte évoluer dans un secteur appelé le paiement et transfert mobile. Et dans ce secteur, PDS a des acteurs qui l’ont précédé, il est donc logique de faire une étude des solutions existantes afin de mieux comprendre le processus métier du projet et bien évidemment les innovations que le projet va apporter. Parmi ces solutions existantes il y’a : Orange money, Sama Money, Wave etc....
@@ -73,7 +73,7 @@ C’est une solution qui est proposée par l'opérateur de télécommunication O
 </span>
 
 La liste ci-dessus n’est pas exhaustive non plus orange money propose d’autres services.Pour utiliser les services d’orange money il n’est pas nécessaire d’avoir une applications mobiles pour chaque opération il suffit de composer #144# et un menu apparaît dans lequel le client choisit le service qu’il souhaite. Mais il existe aussi une application mobile disponible sur android et ios dont voici quelques captures d'écrans:
-![](assets/images/pds/orangemoney.png)
+![](assets/assets/images/pds/orangemoney.png)
 
 ### SAMA Money
 
@@ -84,7 +84,7 @@ SAMA Money est une plateforme de transfert d’argent et de paiement mobile. Il 
 ● Paiement de services( Eau/Électricité, Abonnement Tv, Recharge téléphonique etc...)<br>
 </span>
 Les services de Sama Money sont accessibles via #600# ou à travers leur application mobile disponible sous android et ios. Pour envoyer de l’argent il faut indiquer le numéro de téléphone du bénéficiaire. Ci dessous quelques captures d'écrans des interfaces.
-![](assets/images/pds/samamoney.png)
+![](assets/assets/images/pds/samamoney.png)
 ### Wave
 
 C’est une plateforme indépendante aussi tout comme Sama Money, elle propose les services suivantes:
@@ -93,7 +93,7 @@ C’est une plateforme indépendante aussi tout comme Sama Money, elle propose l
 ● Paiement de services <br>
 </span>
 Ci dessous quelques captures d'écrans des interfaces de Wave:
-![](assets/images/pds/wave.png)
+![](assets/assets/images/pds/wave.png)
 ## Etude fonctionnelle et non fonctionnelle
 
 ### A.Objectifs fonctionnels
@@ -150,15 +150,15 @@ Le délai de réalisation du projet au complet est défini par le maître d’ou
 ### Quelque captures
 Accueil agent           |  Profil
 :-------------------------:|:-------------------------:
-![](assets/images/pds/pdsaccueil.png) |  ![](assets/images/pds/pdsprofil.png)
+![](assets/assets/images/pds/pdsaccueil.png) |  ![](assets/assets/images/pds/pdsprofil.png)
 
  Creation compte            |  Saisi identifiant
  :-------------------------:|:-------------------------:
- ![](assets/images/pds/pdscreationcompte.png) |  ![](assets/images/pds/pdsrechercher.png)
+ ![](assets/assets/images/pds/pdscreationcompte.png) |  ![](assets/assets/images/pds/pdsrechercher.png)
   
  Parametre           |  Historique
  :-------------------------:|:-------------------------:
- ![](assets/images/pds/pdsparametre.png) |  ![](assets/images/pds/pdsdetailcompte.png)
+ ![](assets/assets/images/pds/pdsparametre.png) |  ![](assets/assets/images/pds/pdsdetailcompte.png)
    
 ### Budget du Projet
 

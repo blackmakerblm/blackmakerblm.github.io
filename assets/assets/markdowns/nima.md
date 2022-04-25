@@ -51,7 +51,7 @@ L’objectif du projet est l’étude, la conception et la réalisation d’un S
 **Etude de l’existant**
 
 Pour comprendre les différentes contraintes techniques du projet et avoir une base de connaissance et d’inspiration je me suis beaucoup entraîné à comprendre l’ERP Odoo, qui a plusieurs modules.Odooest un outil polyvalent permettant la gestion des entreprises. Il est entièrement personnalisable grâce à ses différents modules et s'adapte parfaitement à toutes sortes de structures.
-![](assets/images/nima/nimaetudeexistant.png)
+![](assets/assets/images/nima/nimaetudeexistant.png)
 C’est le seul système que j’ai étudié pour la réalisation de ce projet.
 
 
@@ -109,6 +109,7 @@ Eclipse est un projet, décliné et organisé en un ensemble de sous-projets de 
 IntelliJ IDEA également appelé IntelliJ , « IDEA » ou « IDJ » est un environnement de développement intégré destiné au développement de logiciels informatiques reposant sur la technologie Java mais il est tout à fait possible de l'intégrer avec d’autres langues voire framework.
 
 **D. Postman**
+
 Postman sert à exécuter des appels HTTP directement depuis une interface graphique. Vous pourrez simplement choisir l'URL, la méthode HTTP (le plus souvent GET, POST, PUT, PATCH et DELETE), les headers, les query params et dans certains cas le body de la requête.
 #### Framework et Langage de programmation
 
@@ -134,7 +135,7 @@ Avant toute chose pour la conception de ce projet, ma discussion avec mon contac
 **Diagramme Business process actuel**\
 Business Process Model and Notation, c'est-à-dire « modèle de procédé d'affaire et notation », est une méthode de modélisation de processus d'affaires pour décrire les chaînes de valeur et les activités métier d'une organisation sous forme d'une représentation graphique.L’enjeu principal est de fluidifier le passage de la phase de conception et de modélisation des processus, à la phase
 de mise en œuvre, pour en faciliter l’exécution. Sur la page suivante se trouve ma modélisation du processus métier de l’entreprise concernant la prise en charge d’une commande, la facturation, la sortie de l'entrepôt d’une commande.
- ![](assets/images/nima/nimabpm.png)\
+ ![](assets/assets/images/nima/nimabpm.png)\
  C’est donc ce processus que la projet a pour but de reprendre en ajoutant d’autre couche et en optimisant le processus.
 
 **Diagramme de use case**\
@@ -145,9 +146,10 @@ une meilleure visibilité de l’image sur le document:
 
 Use case1           |Use case2           |Use case3            
 :-------------------------:|:-------------------------:|:-------------------------:
- ![](assets/images/nima/nimausecase1.png) |   ![](assets/images/nima/nimausecase2.png)|   ![](assets/images/nima/nimausecase3.png)
+ ![](assets/assets/images/nima/nimausecase1.png) |   ![](assets/assets/images/nima/nimausecase2.png)|   ![](assets/assets/images/nima/nimausecase3.png)
  
-**Diagramme d’activité**\
+**Diagramme d’activité**
+
 Les diagrammes d'activités permettent de mettre l'accent sur les traitements. Ils sont donc particulièrement adaptés à la modélisation du cheminement de flots de contrôle et de flots de données. Ils permettent ainsi de représenter graphiquement le comportement d'une méthode ou le déroulement d'un cas d'utilisation. Les diagrammes d'activités sont relativement proches des diagrammes
 d'états-transitions dans leur présentation, mais leur interprétation est sensiblement différente. Les diagrammes d'états-transitions sont orientés vers des systèmes réactifs, mais ils ne donnent pas une vision satisfaisante d'un traitement faisant intervenir plusieurs classeurs et doivent être complétés, par exemple, par des diagrammes de séquence. Au contraire, les diagrammes
 d'activités ne sont pas spécifiquement rattachés à un classeur particulier. On peut attacher un diagramme d'activités à n'importe quel élément de modélisation afin de visualiser, spécifier, construire ou documenter le comportement de cet élément.
@@ -155,11 +157,11 @@ Ci dessous je présente différents diagrammes d’activité de mon projet.
 
 **1. Diagramme activité ajout commande**
 
- ![](assets/images/nima/nimaajoutcommande.png)
+ ![](assets/assets/images/nima/nimaajoutcommande.png)
  
 **2. Diagramme activité ajout client**
 
-![](assets/images/nima/nimaajoutclient.png)\
+![](assets/assets/images/nima/nimaajoutclient.png)\
 **Diagramme de séquences**
 
 Le diagramme de séquence permet de montrer les interactionsd'objets dans le cadre d'un scénario lié à un use case. Dans un souci de simplification, on représente l'acteur principal à gauche du diagramme, et les acteurs secondaires éventuels à droite du système. Le but est de décrire comment se déroulent les interactions entre les acteurs ou objets.Sur la prochainepage je présente la
@@ -167,9 +169,10 @@ séquence de différents scénarios ou fonction de mon projet. On ne presentera 
 
 **Diagramme sequence inscription**
 
-![](assets/images/nima/nimasequenceinscrire.png)
+![](assets/assets/images/nima/nimasequenceinscrire.png)
 
-**Diagramme de classes**\
+**Diagramme de classes**
+
 Le diagramme de classes est considéré comme le plus important de la modélisation orientée objet, il est le seul obligatoire lors d'une telle modélisation. Alors que le diagramme de cas d'utilisation montre un système du point de vue des acteurs, le diagramme de classes en montre la structure interne. Il permet de fournir une représentation abstraite des objets du système qui vont interagir pour réaliser les cas d'utilisation.Un diagramme de classes n'est donc pas adapté (sauf cas particulier) pour détailler, décomposer, ou illustrer la réalisation d'un cas d'utilisation particulier.
 Il s'agit d'une vue statique, car on ne tient pas compte du facteur temporel dans le comportement du système. Le diagramme de classes modélise les concepts du domaine d'application ainsi que les concepts internes créés de toutes pièces dans le cadre de l'implémentation d'une application. Chaque langage de Programmation orienté objet donne un moyen spécifique d'implémenter le
 paradigme objet (pointeurs ou pas, héritage multiple ou pas, etc.), mais le diagramme de classes permet de modéliser les classes du système et leurs relations indépendamment d'un langage de programmation particulier. Et grâce à l’outil Visual paradigm que j’utilise, il est très facile à partir du diagramme de classe de générer les classes en java de mon projet ce qui m’a
@@ -177,7 +180,7 @@ facilité la tâche de manière considérable. Sur la page suivante se trouve le
 
 Diagramme classe 1            |  Diagramme classe 2
 :-------------------------:|:-------------------------:
-![](assets/images/nima/nimaclasse1.png) |  ![](assets/images/nima/nimaclasse2.png)
+![](assets/assets/images/nima/nimaclasse1.png) |  ![](assets/assets/images/nima/nimaclasse2.png)
  
 ## RÉALISATION DU PROJET
 
@@ -187,27 +190,27 @@ Après la conception, je me suis lancé dans la réalisation des différents mod
 
 **Ajout Commande postman**
 
-![](assets/images/nima/nimaaddcommande.png)
+![](assets/assets/images/nima/nimaaddcommande.png)
 
 **Page Inscription UI**
 
-![](assets/images/nima/nimainscriptionui.png)
+![](assets/assets/images/nima/nimainscriptionui.png)
 
 **Page connection**
 
-![](assets/images/nima/nimaconnection.png)
+![](assets/assets/images/nima/nimaconnection.png)
 
 **Page vue ensemble (commercial)**
 
-![](assets/images/nima/NimaOverview.png)
+![](assets/assets/images/nima/NimaOverview.png)
 
 **Page commandes (commercial)**
 
-![](assets/images/nima/Nimacommandes.png)
+![](assets/assets/images/nima/Nimacommandes.png)
 
 **Page clients (commercial)**
 
-![](assets/images/nima/nimaajoutclientui.png)
+![](assets/assets/images/nima/nimaajoutclientui.png)
 ### PERSPECTIVES
 
 Le projet dans sa globalité comme je l’ai imaginé n’est pas achevé, comme perspective je pense à l'intégration d’un module d’analyse et de prédictions des données présente au niveau de la base de données et aussi la compatibilité entre le système et d’autres systèmes existants au sein de l’entreprise.

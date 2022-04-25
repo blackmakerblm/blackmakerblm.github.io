@@ -5,18 +5,21 @@
 Cet exercice a pour but de regrouper les pays dans des clusters en fonctions des indicateurs
 donnés dans l’exercice.
 
-**Problème:** L’une des étapes importantes dans chaque analyse de donnée est de s’assurer
+**Problème:**
+ L’une des étapes importantes dans chaque analyse de donnée est de s’assurer
 que les données sont complètes, qu’il y’a pas de valeurs manquantes. Ici en regardant
 attentivement les observations(Lignes) on peut voir que pour certains pays il y’a des
 données qui manquent.
 
-**Solution:** Il faut donc remplacer ces valeurs avec des valeurs qui pourraient se rapprocher
+**Solution:** 
+Il faut donc remplacer ces valeurs avec des valeurs qui pourraient se rapprocher
 de la réalité. Pour ce faire on va appliquer l’algorithme des **K-NN** qui est utilisé pour la
 classification normalement mais on s’en servira juste pour connaitres les K voisins les plus
 proches des pays qui ont des données manquantes. Ensuite pour chaque attribut manquant
 on fait la moyenne de cet attribut des K plus proches voisins.
 
-**Note:** Pour cet exercice on va utiliser k=4 donc les 4 voisins les plus proches ce qui nous
+**Note:** 
+Pour cet exercice on va utiliser k=4 donc les 4 voisins les plus proches ce qui nous
 donnera pour la Somalie( Tunisie,Soudan sud,Bénin et Libye) et pour le Soudan du
 sud(Zimbabwe,Bénin,Tchad et le Mali).On aura donc pour le Soudan du Sud et Somalie ce tableau
 
@@ -38,7 +41,7 @@ ensemble appelé cluster
 
 ## A.1) Clusterisation Par Catégorie
 
-## A.1.1)Population pour K=4, K=6, K=8 et K=
+## A.1.1)Population pour K=4, K=6, K=8 et K=10
 
 Ci dessous le schéma sous orange
 ![](assets/assets/images/clustering/population_orange.png)
@@ -114,7 +117,7 @@ Alors il est très clair désormais l’augmentation du K nous donne des pays be
 proches au niveau de leur proches
 
 
-**A.1.2) Superficie pour K=4, K=6, K=8 et K=**
+**A.1.2) Superficie pour K=4, K=6, K=8 et K=10**
 
 Ci dessous le schéma pour la superficie
 ![](assets/assets/images/clustering/superficie_orange.png)

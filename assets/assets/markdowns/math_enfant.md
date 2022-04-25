@@ -90,15 +90,15 @@ When booting the application, the user will see thefirst which will give one a c
 ## SCREENSHOTS 
 Welcome page            |  Mental computing
 :-------------------------:|:-------------------------:
-![](assets/images/math_enfant/djateaccueil.png) |  ![](assets/images/math_enfant/djatecalcul.png)
+![](assets/assets/images/math_enfant/djateaccueil.png) |  ![](assets/assets/images/math_enfant/djatecalcul.png)
  
 Ascending order           |  False answer
 :-------------------------:|:-------------------------:
-![](assets/images/math_enfant/djateordrecroissant.png) | ![](assets/images/math_enfant/djateordrefalse.png)
+![](assets/assets/images/math_enfant/djateordrecroissant.png) | ![](assets/assets/images/math_enfant/djateordrefalse.png)
  
 Correct answer           |  Congrat
 :-------------------------:|:-------------------------:
-![](assets/images/math_enfant/djateordrecorrect.png) | ![](assets/images/math_enfant/djatefelicitation.png)
+![](assets/assets/images/math_enfant/djateordrecorrect.png) | ![](assets/assets/images/math_enfant/djatefelicitation.png)
  
 
 ## WEBOGRAPHY

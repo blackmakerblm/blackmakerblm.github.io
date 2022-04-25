@@ -61,19 +61,19 @@ Le projet dans sa première phase a duré 5 jours, la seconde phase a duré 3 jo
 ## Quelque captures
  Accueil           |  Menu
  :-------------------------:|:-------------------------:
- ![](assets/images/sani/accueil.JPG) |  ![](assets/images/sani/menu.JPG) 
+ ![](assets/assets/images/sani/accueil.JPG) |  ![](assets/assets/images/sani/menu.JPG) 
  
   Facture vide           |  Facture non vide
   :-------------------------:|:-------------------------:
-  ![](assets/images/sani/facturevide.JPG) |  ![](assets/images/sani/facturefrite.JPG)  
+  ![](assets/assets/images/sani/facturevide.JPG) |  ![](assets/assets/images/sani/facturefrite.JPG)  
   
    Livraison           |  Livraison
    :-------------------------:|:-------------------------:
-   ![](assets/images/sani/livraisondesactiver.JPG) |  ![](assets/images/sani/livraison.JPG)  
+   ![](assets/assets/images/sani/livraisondesactiver.JPG) |  ![](assets/assets/images/sani/livraison.JPG)  
 
  Commande           |  Commande valide
  :-------------------------:|:-------------------------:
- ![](assets/images/sani/validationcommandeincomplet.JPG) |  ![](assets/images/sani/commandevalider.JPG) 
+ ![](assets/assets/images/sani/validationcommandeincomplet.JPG) |  ![](assets/assets/images/sani/commandevalider.JPG) 
 
 ### Propriétés et droits
 Le projet appartient exclusivement au client à l’origine de la commande.

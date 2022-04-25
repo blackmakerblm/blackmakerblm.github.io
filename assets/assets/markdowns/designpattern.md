@@ -48,10 +48,15 @@ L'analyse fonctionnelle est une démarche qui « consiste à rechercher et à ca
 Le système couvre les modules fonctionnels suivants :
 
 ● Gestion d’un Dé
+
 ● Gestion des différentes vues
+
 ● Gestion des Scores
+
 ● Gestion des joueurs
+
 ● Gestion d’un jeu
+
 ● Gestion joueur
 
 ### Objectifs fonctionnels
@@ -59,11 +64,15 @@ Le système couvre les modules fonctionnels suivants :
 Le système doit permettre :
 
 ● jouer
+
 ● voir son score
+
 ● régler paramètres
+
 ● quitter quand on le souhaite
 
 **Bloc fonctionnel : Gestion d’un dé**
+
 Le système doit permettre dans ce bloc :
 
 1. Construction d’un objet dé
@@ -71,30 +80,40 @@ Le système doit permettre dans ce bloc :
 3. Faire la somme des valeurs des deux dés
 
 **Bloc fonctionnel : Gestion des vues**
+
 Le système doit permettre dans ce bloc :
 
 ● Une vue peut observer un objet
+
 ● Une vue se met automatiquement à jour quand le sujet qu’elle observe change de valeur.
 
 **Bloc fonctionnel : Gestion des scores**
+
 Le système doit permettre dans ce bloc:
 
 ● D’inscrire un score à la fin d’une partie
+
 ● De lire l’ensemble des scores
+
 ● De choisir un moyen de persistence
 
 **Bloc fonctionnel : Gestion des Joueurs**
+
 Le système doit permettre dans ce bloc:
+
 ● D'écrire son pseudonyme au début de la partie
 
 **Bloc fonctionnel : Gestion de Jeu**
+
 Le système doit permettre dans ce bloc:
 
 ● De créer une instance de jeu unique
+
 ● prendre en charge plusieur joueurs en même temps
 
 **Acteurs du système**
-Joueur
+
+Le seul acteur c'est le joueur
 
 ### Besoin non fonctionnel
 Pour les besoins non fonctionnels, le jeu est accessible à travers un navigateur (interface web).
@@ -133,7 +152,7 @@ Le but de la conception est de fixer les choix techniques et de  réparer l’im
 Bien souvent, la maîtrise d'ouvrage et les utilisateurs ne sont pas des informaticiens. Il leur faut donc un moyen simple d'exprimer leurs besoins. C'est précisément le rôle des diagrammes de cas d'utilisation qui permettent de recueillir, d'analyser et d'organiser les besoins, et de recenser les grandes fonctionnalités d'un système. Il s'agit donc de la première étape UML d'analyse d'un système. Un diagramme de cas d'utilisation capture le comportement d'un système, d'un sous-système, d'une classe ou d'un composant tel qu'un utilisateur extérieur le voit. Il scinde la fonctionnalité du système en unités cohérentes, les cas d'utilisation, ayant un sens pour les acteurs. Les cas d'utilisation permettent d'exprimer le besoin des utilisateurs d'un système, ils sont donc
 une vision orientée utilisateur de ce besoin au contraire d'une vision informatique. Ci dessous mon diagramme de use case de mon projet: 
 
- ![](assets/images/designpattern/deusecase.png)
+ ![](assets/assets/images/designpattern/deusecase.png)
  
 Le joueur a 3 cas d’utilisation dans le jeu, il pourra soit jouer , ou voir son score ou bien tout simplement quitter le jeu.
 
@@ -144,11 +163,11 @@ d'activités ne sont pas spécifiquement rattachés à un classeur particulier. 
 
 **1. Diagramme d'activité de jouer**
 
- ![](assets/images/designpattern/deactivitejouer.png)
+ ![](assets/assets/images/designpattern/deactivitejouer.png)
  
 **2. Diagramme activité de voir son score**
 
-![](assets/images/designpattern/deactivitescore.png)
+![](assets/assets/images/designpattern/deactivitescore.png)
 
 ### Diagramme de classes
 Le diagramme de classes est considéré comme le plus important de la modélisation orientée objet, il est le seul obligatoire lors d'une telle modélisation. Alors que le diagramme de cas d'utilisation montre un système du point de vue des acteurs, le diagramme de classes en montre la structure interne. Il permet de fournir une représentation abstraite des objets du système qui vont interagir pour réaliser les cas d'utilisation.Un diagramme de classes n'est donc pas adapté (sauf cas particulier) pour détailler, décomposer, ou illustrer la réalisation d'un cas d'utilisation particulier. Il s'agit d'une vue statique, car on ne tient pas compte du facteur temporel dans le comportement du système. Le diagramme de classes modélise les concepts du domaine d'application ainsi que les
@@ -156,29 +175,31 @@ concepts internes créés de toutes pièces dans le cadre de l'implémentation d
 
 **Architecture Haut Niveau**
 
-![](assets/images/designpattern/dehautniveau.png)
+![](assets/assets/images/designpattern/dehautniveau.png)
 
 Nous avons les éléments de l’interfaces tout ce qui est vue, dans le package Interface Utilisateurs, et Les objets qui gère le métier sont dans le package Objets Métiers, les éléments de la persistance sont dans Persistance dépendent tous de Utilitaire.
 
 **Architecture Bas Niveau**
 
-![](assets/images/designpattern/debasniveau.jpg)
+![](assets/assets/images/designpattern/debasniveau.jpg)
 
 Dans cette architecture on peut clairement voir quelques un patron comme Observer mais Factory et Singleton ne sont pas très visible. Alors pourquoi j’ai utilisé ces 3 patrons:
 
 **Observer:**
+
 L’Observer design pattern, abrégé en Observer pattern et traduit par « patron de conception Observateur », est l’un des modèles les plus appréciés dans la conception de logiciels. Il fournit en effet une méthode uniforme permettant de définir un rapport de dépendance entre deux objets ou plus afin de communiquer l’ensemble des modifications à un autre objet donné de façon aussi simple et rapide que possible. À cette fin, il est possible d’enregistrer n’importe quel objet comme « observer » ou observateur d’un autre objet. Ce dernier objet, que l’on appelle « sujet », informe l’observateur enregistré dès qu’il a été modifié ou adapté. 
 
-![](assets/images/designpattern/deobserver.png)
+![](assets/assets/images/designpattern/deobserver.png)
 
 C’est ce patron qui va me permettre de gérer une vue au niveau de l’interface de manière synchrone. A chaque fois que la valeur d’un
 élément qui est censé être sur l’ecran change celui-ci doit se mettre à jour automatiquement. Je l’ai utilisé sur La vue des info du joueur, le joueur lui meme, le jeu, le dé, la vue qui affiche le dé etc.... C’est le design pattern que j’ai le plus utilisé. 
 
 **Singleton:**
+
 Le Singleton est un patron de conception de création qui s’assure de l’existence d’un seul objet de son genre et fournit un unique point d’accès vers cet objet. Le singleton possède à peu près les
 mêmes avantages et inconvénients que les variables globales. Même s’ils sont super utiles, ils réduisent la modularité du code.
 
-![](assets/images/designpattern/desingleton.png)
+![](assets/assets/images/designpattern/desingleton.png)
 
 Le Singleton c’est lui qui m’a permis par exemple de faire en sorte que lorsqu’on lance l’application c’est toujours une seule et même instance de jeu qui est renvoyé peu 
 
@@ -187,7 +208,7 @@ Le Singleton c’est lui qui m’a permis par exemple de faire en sorte que lors
 La fabrique est un patron de conception créationnel utilisé en programmation orientée objet. Elle permet d'instancier des objets dont le type est dérivé d'un type abstrait. La classe exacte de l'objet n'est donc pas connue par l'appelant.
 Voici le diagramme UML du design pattern Factory :
 
-![](assets/images/designpattern/defactory.png)
+![](assets/assets/images/designpattern/defactory.png)
 
 Comme vous pouvez voir ci-dessus, afin de créer notre Fabrique, nous avons besoin de 4 éléments :
 
@@ -208,11 +229,11 @@ Sur la prochaine page je présente la séquence de différents scénarios ou fon
 
 **Diagramme séquence voir score**
 
-![](assets/images/designpattern/desequencescore.jpg)
+![](assets/assets/images/designpattern/desequencescore.jpg)
 
 **Diagramme séquence jouer**
 
-![](assets/images/designpattern/desequencejouer.jpg)
+![](assets/assets/images/designpattern/desequencejouer.jpg)
 
 ## RÉALISATION DU PROJET
 
@@ -223,15 +244,16 @@ Après la conception, je me suis lancé dans la réalisation des différents mod
 Etant donné que j’ai utilisé un langage différent de java, dans cette section je vais un peu montrer quelques bouts de codes avant de montrer les interfaces utilisateurs.
 
 **Dé:**
+
 Ceci est l'implémentation du Dé:
 
-![](assets/images/designpattern/decodede.png)
+![](assets/assets/images/designpattern/decodede.png)
 
 **DieView:**
 
 Cette classe represente la vue qui va representer le dé sur l’ecran elle est bien entraint d’implementer l’interface
 
-![](assets/images/designpattern/decodedeview.png)
+![](assets/assets/images/designpattern/decodedeview.png)
 **Observer:**
 
 ## Interfaces
@@ -240,15 +262,15 @@ Cette classe represente la vue qui va representer le dé sur l’ecran elle est 
 
 C’est sur cette page qu’il est demandé à l’utilisateur les 3 cas de use case. La page suivante montre l’interface:
 
-![](assets/images/designpattern/depagemain.png)
+![](assets/assets/images/designpattern/depagemain.png)
 
 **Page Joueur Container**
 
-![](assets/images/designpattern/depagecontainer.png)
+![](assets/assets/images/designpattern/depagecontainer.png)
 
 **Page RollContainer**
 
-![](assets/images/designpattern/derollcontainer.png)
+![](assets/assets/images/designpattern/derollcontainer.png)
 
 ### CONCLUSION
 

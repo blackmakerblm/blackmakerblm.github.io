@@ -1,7 +1,8 @@
 ### I. BESOIN ET OBJECTIFS DU PROJET
 
 **1) Contexte**
-      La présence sur internet est devenue quelque chose de nécessaire, voire indispensable, pour
+
+La présence sur internet est devenue quelque chose de nécessaire, voire indispensable, pour
 les entreprises de nos jours. Cette règle n'épargne pas les commerçants, qui ont pour la majorité
 créer des boutiques en ligne, ou des plateformes pour tout simplement faire connaître leurs
 produits. Alors, chose est de noter qu’un consommateur lorsqu’il cherche un produit, va toujours
@@ -30,9 +31,11 @@ la vraie vie afin d'améliorer l'expérience d'achat des consommateurs était un
 grande de motivation pour moi.
 
 **3) Objectif**
-     Ce projet a donc pour objectif de mettre en place un outil de scraping ou grattage des différents sites choisis au préalable par las tructure dans le cadre de leur partenariat ou selon d’autres critères définis par eux même.
+
+Ce projet a donc pour objectif de mettre en place un outil de scraping ou grattage des différents sites choisis au préalable par las tructure dans le cadre de leur partenariat ou selon d’autres critères définis par eux même.
 
 **4) Enjeux**
+
 Le principal en enjeu de ce projet,est que selon la vision et la volonté de mon maître de stage, cet outil de grattage qu’on doit mettre en place doit être paramétrable afin de
 pouvoir gratter plusieurs sites web. Alors qu'un outil de scraping lors de son développement se base sur la structure du site web dont il a la charge de gratter afin de récupérer, puisqu’il s’agit de parcourir le DOM(Document Object Model) Html pour trouver les informations qu’on souhaite récupérer. Nous remarquons que c’est donc une tâche qui est fortement relative au site auquel le
 scraper est destiné.
@@ -45,9 +48,11 @@ Tout ce qui concerne la partie de grattage de sites web ici notamment le site we
 Mais l'étape d’après c’est à dire la persistance de ces données que je récupère à été pensé avec la collaboration du développeur du comparateur de prix.
 
 **2) Difficultés**
+
 Comme énoncé plutôt la difficulté majeure de ce projet est dûe au fait qu’on m’a imposé quel outil que je dois mettre en place soit configurable, c’est à dire selon mon maître de stage, il faut qu’on puisse en fonction d’un URL(Uniform Resource Locator) c’est à dire l’adresse d’un site web et ou du nom d’un produit, pouvoir aller sur ce site en question qui a été précisé en paramètre et extraire les contenus renseignés en paramètre ou pas. Une autre difficulté est que certains sites web interdisent ou limitent l’accès aux robots de grattage à leur contenus. Et aussi il y'a l'obstacle de la légalité. C’est donc un domaine qui est lié à un aspect juridique qu’il faut forcément prendre en compte surtout qu’il s’agisse d’une entreprise donc c’est un facteur à ne pas négliger vu les enjeux.
 
 **3) Cahierdes charges**
+
 L’objectif du projet est l’étude, la conception et la réalisation d’un scrapper web ou encore outil de grattage de site web qui proposent des produits en vente. Cet outil doit en fonction du site web qu’il a gratté, gardé une trace de l’historique afin que la tâche d’extraction soit progressive.
 Le système couvre les modules fonctionnels suivants :
 
@@ -61,7 +66,8 @@ données scrappées.
 **4) Etude de l’existant**
 
 Pour comprendre les différentes contraintes techniques du projet et avoir une base de connaissance et d’inspiration je me suis beaucoup renseigné sur des outils qui font à peu près la même chose. J’ai eu donc la connaissance de Web Scraper et Scrappy qui sont des outils avec un caractère un peu universel même si leur utilisation comporte des inconvénients mais l'étude de ces différents outils et de leur comportement m’a aidé dans la conception de ma solution. C’est une extension disponible sous Google Chrome qui permet d’extraire lesd onnées d’un site internet très rapidement. Web Scraper navigue sur les sites choisis afin d’enextraire toutes les données. Les données collectées peuvent être exportées sous forme de CSV. L’extension vous permet également de scrapper plusieurs sites à la fois ou même les
-## programmer.
+
+**Scrappy**
 
 Scrapy est un framework open source permettant la création de robots d’indexation. Développé en python, il dispose d'une forte communauté, offrant de nombreux modules supplémentaires. La première version stable a été publiéeen septembre 2009. Depuis, l'équipe de développement publie régulièrement de nouvelles versions dans le but d'enrichir le framework en fonnctionnalité. L'objectif principal est d'obtenir une API stable pour la version 1.0. Le framework dispose d'une communauté active, et un support commercial est effectué par plusieurs entreprises. Le framework est compatible Python 2.7 et Python 3.6 ou au-dessus, sur la majorité des plates-formes.
 
@@ -70,17 +76,20 @@ Scrapy est un framework open source permettant la création de robots d’indexa
 **Définition**
 
 Le web scraping (parfois appelé harvesting) est une technique d'extraction du contenu de site web, via un script ou un programme, dans le but de le transformer pour permettre son utilisation dans un autre contexte, par exemple le référencement.L’intérêt principal du web scraping est de pouvoir récolter du contenu sur un site web, qui ne peut être copié collé sans dénaturer la structure même du document.Ainsi cette technique est souvent utilisée dans le cadre d’une veille concurrentielle,notamment sur des sites e-commerce.Il existe plusieurs sites et programmes permettant de faire du web scraping. Ils se différencient par leurs utilisations.
+
 **Fondement et principes du web scraping**
+
 Les principes de base du Web Scraping consistent à créer un programme qui, de manière automatisée, récupère les données non structurées d'un site Web et ajoute une structure à ces données.Ces données sont souvent encapsulées sous forme de texte brut dans le code HTML d'un site Web, qui est la langue standard dans laquelle les sites Web sont écrits. Il existe une multitude de façons dont le web scraping peut être mis en œuvre,dont beaucoup sont discutés dans l'article.La complexité de ces implémentations varie largement selon le site et l’objectif final.Un site web écrit en HTML, pour être bien interprété par le navigateur il y a un objet appelé le DOM (Document ObjectModel) qui contient toute la structure ainsi que la hiérarchie des différents éléments HTML.
 
 **DOM**
 
 Selon la définition wikipedia: Le Document Object Model (DOM) est une interface de programmation normalisée par le W3C(CONSORTIUM DU WEB), qui permet à des scripts d'examiner et de modifier le contenu du navigateur web. Par le DOM, la composition d'un document HTML ou XML aussi est représentée sous forme d'un jeu d'objets - lesquels peuvent représenter une fenêtre, une phrase ou un style, par exemple – reliés selon une structure en arbre. À l'aide du DOM, un script peut modifier le document présent dans le navigateur en ajoutant ou en supprimant des nœuds de l'arbre(définition wikipedia).
-![](assets/images/scrapper/dom.png)
+![](assets/assets/images/scrapper/dom.png)
 **Les difficultés du scrapping**
 
 
 Comme mentionné dans le sous titre précédent, le scraping web est une tâche qui est fortement liée au site auquel on applique le scrapper, donc vu qu’on se base sur la  structure HTML du site pour écrire le scrapper, alors dès que la structure du site change, le code du scrapper se brise et doit aussi être mis à jour.Ce qui représente une certaine fragilité au niveau de l’efficacité du scraper.
+
 **Structure HTML des sites**
 
 
@@ -93,7 +102,7 @@ Il existe plusieurs langages pour localiser des éléments ou un élément spéc
 **Xpath**
 
 XPath est une abréviation pour XML Path Language (qu'on pourrait traduire en français par « langage de chemin XML »). Ce langage utilise une syntaxe non-XML pour cibler différentes parties d'un document XML. Il peut aussi être utilisé pour tester certains nœuds d'un document afin de déterminer s'ils suivent un motif particulier. XPath est principalement utilisé avec XSLT, mais on peut tout aussi bien l'utiliser afin de naviguer dans le DOM de tout document structuré avec un langage semblable à XML (HTML ou SVG par exemple) .Le code Html ci dessous peut être facilement parcouru avec xpath:
-![](assets/images/scrapper/xpath.png)
+![](assets/assets/images/scrapper/xpath.png)
 Pour ce code html, si on veut extraire le titre voici le pattern qu’il faut:   /html/head/title/
 Ceci va nous retourner l'élément title après en fonction du langage de programmation qu’on utilise on peut afficher le texte qui va nous retourner le contenu de title.
 
@@ -138,6 +147,7 @@ L’outil doit être accessible uniquement par l’entreprise qui est à l'initi
 ## Outils et développement techniques
 
 **Outils**
+
 Pour la réalisation et même la conception de ce projet j’ai utilisé différents
 outils qui sont les suivants:
 
@@ -145,7 +155,8 @@ outils qui sont les suivants:
 
 Selenium WebDriver est un framework web qui vous permet d’exécuter des tests multi-navigateurs. Cet outil est utilisé pour automatiser les tests d’applications Web pour vérifier qu’il fonctionne correctement.
 Selenium WebDriver vous permet de choisir un langage de programmation de votre choix pour créer des scripts de test. Il permet d'interagir avec différents navigateurs web tels que Google Chrome grâce au chromedriver 1 ou Mozilla Firefox avec le gecko driver2 de même que le ferait un utilisateur de l'application. Il entre ainsi dans la catégorie des outils de test dynamique (à l'inverse des tests statiques qui ne nécessitent pas l'exécution du logiciel) facilitant le test fonctionnel. Selenium client est disponible dans plusieurs langages de programmation comme python,java etc.. dans mon projet j’ai utilisé avec python.
-![](assets/images/scrapper/selenium.png)
+![](assets/assets/images/scrapper/selenium.png)
+
 **B. Django**
 
 Django est un framework Python de haut niveau, permettant un développement rapide de sites internet, sécurisés, et maintenables. Créé par des développeurs expérimentés, Django prend en charge la plupart des tracas du développement web, vous pouvez donc vous concentrer sur l'écriture de votre application sans avoir besoin de réinventer la roue. Il est gratuit, open source, a une communauté active, une bonne documentation, et plusieurs options pour du support gratuit ou non. À l'origine, Django fut développé entre 2003 et 2005 par une équipe web responsable de la création et de la maintenance de sites journalistiques. Après avoir créé un certain nombre de sites, l'équipe commença à exclure et à réutiliser des codes récurrents et des schémas d'architecture. Ce code récurrent finit par évoluer en un framework générique de développement web, qui fut mis à disposition en open-source sous le projet Django en Juillet 2005. Django a continué à se développer et à s'améliorer, depuis sa première sortie (1.0) en Septembre 2008 jusqu'à la version 2.0 récemment sortie (2017). Chaque sortie a ajouté son lot de nouvelles fonctionnalités et de corrections de bugs, allant du support de nouveaux types de bases de données, de moteurs de templates et de cache, à l'addition de fonctions et de classes de vues 'génériques' (qui réduisent la quantité de code que doivent écrire les développeurs pour tout un tas de tâches de programmation). Le choix de Django revient à mon encadrant de stage, même s’il m’a fallu apprendre ce framework,mais il n’est pas différents des autres framework avec lesquels j’ai eu à travailler dans le passés tel que Laravel ou Spring boot 
@@ -153,7 +164,8 @@ Django est un framework Python de haut niveau, permettant un développement rapi
 **C. Redis**
 
 Souvent appelé broker, redis est un magasin de structure de données clé/valeur en mémoire open source rapide. Redis propose un ensemble de structures de données en mémoire polyvalentes qui vous permet de créer facilement un large éventail d'applications personnalisées. Les principaux cas d'utilisation de Redis comprennent la mise en cache, la gestion des sessions, la fonctionnalité pub/sub et les classements. Il est d’une très grande utilité surtout dans le cas de tâche asynchrone. Je l’ai utilisé dans mon code parce que pour une tâche asynchrone il faut la stocker quelque part et ensuite après la fin de la tâche il faut un endroit pour stocker le résultat et la récupération rapide. Il y a d'autres utilités bien évidemment par exemple dans le cas d’une architecture client server. Redis peut être utilisé au milieu de l’architecture entre le client et le serveur pour stocker les données et récupérer plus rapidement au lieu de toujours solliciter le serveur.
-![](assets/images/scrapper/redis.png)
+![](assets/assets/images/scrapper/redis.png)
+
 **D. Celery**
 
 Celery est un système distribué simple, flexible et fiable pour traiter de grandes de messages, tout en fournissant aux opérations les outils nécessaires pour maintenir un tel système. Il s'agit d'une file d'attente de tâches axée sur le traitement en temps réel, tout en prenant en charge la planification des tâches. Les files d'attente de tâches sont utilisées comme mécanisme pour répartir le
@@ -176,7 +188,7 @@ Python est le langage de programmation open source le plus employé par les info
 
 Compte tenu de la contrainte du projet, voici ci- dessous la manière dont j’ai pensé au
 projet. Ce schéma représente les différents modules et dépendances:
-![](assets/images/scrapper/conceptionscrapper.png)
+![](assets/assets/images/scrapper/conceptionscrapper.png)
 Pour expliquer ce schéma, il ya d'abord le premier module Gestionnaires asynchrones c’est dans ce module qu’est défini l’application celery qui permet de définir des tâches asynchrones ainsi que les tâches programmées déclenchable à chaque fois que réglage est respecté, ces tâches programmables sont définies dans l’ordonnanceur. On peut par exemple définir qu’à chaque 5 min ou 10 min que le scrapper puisse aller gratter le site marjane en l'occurrence pour extraire quelques données et ensuite sauvegarder la position du dernier élément extrait avant la fin de l'exécution du
 programme. Dans cet exemple on fait à scrapper soit à travers la vue ou un ordonnanceur qui a déclenché une tâche ensuite scrapper dépend de l’url en fonction de l’url on va faire appel au scrapper marjane ou bien du site dont l’url a été précisé après le scraping on appel au module sauvegarde pour persister les données scrapper et aussi garder la trace du dernier élément scrappé.
 
@@ -265,46 +277,50 @@ On peut remarquer qu’il ya que des disallow partout du coup il y a déjà une 
 
 On peut noter que Jumia précise clairement de ne pas dépasser 200 requêtes par minutes sous peine d’être bloquées. 
 Présentons maintenant celui de marjane:
-![](assets/images/scrapper/marjanerobot.png)
+![](assets/assets/images/scrapper/marjanerobot.png)
 Ici on peut voir que les seules ressources que marjane interdits aux robots c’est tout ce qui est lié au portefeuille du client ou les informations d’un compte
  CI dessous le l’interface d’accueil de marjane
-![](assets/images/scrapper/marjaneaccueil.png)
+![](assets/assets/images/scrapper/marjaneaccueil.png)
 Tout comme on a précisé dans les chapitres précédents le scrapping se base sur la structure du site web, nous devons donc accéder à la structure html du site, ce qu’on peut facilement réaliser avec un ctrl+shift+i ou alors on fait clic droit, inspecter l'élément.
 Voici le code source html de la page ci dessus:
-![](assets/images/scrapper/marjanehtmldom.png)
+![](assets/assets/images/scrapper/marjanehtmldom.png)
 Nous pouvons observer le code source html ici, nous devons donc étudier profondément cette structure afin de trouver le moyen de localiser les éléments dont on veut accéder lors de notre
 grattage. Il existe plusieurs outils pour pouvoir extraire les données une fois identifié tel que BeautifulSoup qui est très connu, mais comme cité dans la section Outil et Framework on a
 décidé d’utiliser Selenium. Le choix est très logique car BeautifulSoup est très limité par exemple si on essaye d'accéder à la page marjane ensuite on souhaite saisir dans la zone de recherche
 un texte pour lancer la recherche, il peut très vite se poser un problème car les scripts ou programmes sont écrits dans des langages dans lesquels les instructions sont exécutées de manière séquentielle et synchrone. Dans ce contexte supposons le site prend du temps à se charger ou bien la zone de recherche n'apparaît pas rapidement sur la page le code va tout de suite échouer, sur selenium par contre il y’a un mécanisme pour attendre le chargement d’un élément spécifique même si cette attente est faite de manière synchrone aussi.
 
 **Snippets du scrapper marjane**
+
 Ci dessous l’image montre un bout de code du scrapper de marjane:
-![](assets/images/scrapper/marjanesnippet.png)
+![](assets/assets/images/scrapper/marjanesnippet.png)
 Cette fonction permet de scrapper tout le contenu du site, tous les articles ou produits qui sont sur le site. Mais pour ne pas être très agressif envers le serveur de marjane il faut penser à faire cette tâche de manière répétitive à travers un ordonnanceur et être capable de recommencer le scrapping à partir de l'élément le programme s’est arrêté avant la fin de sa dernière exécution. C’est pourquoi on remarque en argument from_last (booleen).
 Il y’a donc une autre fonction :
-![](assets/images/scrapper/marjanesecondsnippet.png)
+![](assets/assets/images/scrapper/marjanesecondsnippet.png)
 Cette fonction est simple, elle fait appel à une autre fonction qui vérifie s’il y’a un élément qui existe dans le fichier historique, si oui on fait appel à la première fonction c’est à dire scrape
 avec les arguments from last à true et aussi l’objet json contenant les informations sur le derniers éléments gratté lors de la dernière exécutions. Enfin pour le site de marjane la dernière fonction c’est celle qui permet de gratter le site de marjane en saisissant le nom d’un produit spécifique:
-![](assets/images/scrapper/marjanelastsnippet.png)
+![](assets/assets/images/scrapper/marjanelastsnippet.png)
+
 **Appel du scrapper à travers une requête**
-![](assets/images/scrapper/appelscrapper.png)
+
+![](assets/assets/images/scrapper/appelscrapper.png)
 Ici ce lien nous permet d’appeler le scrapper.
-![](assets/images/scrapper/executionscrapper.png)
+![](assets/assets/images/scrapper/executionscrapper.png)
 Ce qu’on peut voir ici sur l’image ci-dessus.
 
 **Stockage au niveau de la base de donnée**
 
 Il serait illogique d’extraire les données dans le cadre de ce projet sans les stocker, c’est pour cela à chaque article scrappée sur le site de marjane, on le stocke dans la base donnée. Il existe un modèle prédéfini par le développeur du projet de comparateur de prix. 
 La structure qu’on a due respectée se trouve sur la page suivante:
-![](assets/images/scrapper/scrappersnippetstockage.png)
+![](assets/assets/images/scrapper/scrappersnippetstockage.png)
 On peut constater qu’on a des classes ici, ce qui peut rappeler la notion de ORM (Object Relational Mapping) disponible dans plusieurs frameworks populaire tel que Spring boot mais aussi Django. Alors le problème est que dans le Nosql on ne parle pas de relationnel, alors comment faire ce mapping tant utile? Il ya plusieurs solutions qui ont été développées dans cette optique avec python, parmi ces solutions on retrouve Pymongo et Djongo(à ne pas confondre avec Django le framework, ici il ya O et non A). Ces solutions permettent donc de garder des classes et le mapping est fait avec le nosql au lieu du sql classique. Pour revenir à notre base de données nosql, on a donc 4 collections proposées par le développeur du comparateur de prix:
 Provenance,Catégorie,HIst Ajout et Produit.
 Après le scrapping voici la base de donnée:
-![](assets/images/scrapper/marjanedb.png)
+![](assets/assets/images/scrapper/marjanedb.png)
+
 **Stockage du dernier élément scrappé**
 
 En ce qui concerne l’historique, et la trace voici le code qui permet de garder cette trace.
- ![](assets/images/scrapper/scrappingfromlast.png)
+ ![](assets/assets/images/scrapper/scrappingfromlast.png)
  Ce code se trouve au niveau des fonctions utilitaires. L'historique est donc gardé dans un fichier .json créé par le programme s’il n’existe pas ou alors tout simplement modifié. il se présente comme défini dans l’image:
 
 ```
