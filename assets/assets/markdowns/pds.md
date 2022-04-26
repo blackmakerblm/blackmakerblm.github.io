@@ -64,35 +64,49 @@ La liste ci-dessus n’est pas exhaustive mais l'étude se portera sur ces diff�
 
 C’est une solution qui est proposée par l'opérateur de télécommunication Orange Mali, Le service est disponible pour les clients du réseau télécom c'est-à-dire la population disposant d’une puce orange money. Il faut par contre créer un compte orange money et ci dessous les services que la solution offre:
 
-<span style="color:brown">● Transfert d’argent national et intra régional<br>
-● Retrait dans un kiosque orange money<br>
-● Dépôt dans son compte à travers un kiosque orange money.<br>
-● Achat de crédit<br>
-● Paiement de services (Isago,Eau/Electricité,Sani web etc....)<br>
-● Livraison de cash<br>
-</span>
+● Transfert d’argent national et intra régional
+
+● Retrait dans un kiosque orange money
+
+● Dépôt dans son compte à travers un kiosque orange money
+
+● Achat de crédit
+
+● Paiement de services (Isago,Eau/Electricité,Sani web etc....)
+
+● Livraison de cash
+
 
 La liste ci-dessus n’est pas exhaustive non plus orange money propose d’autres services.Pour utiliser les services d’orange money il n’est pas nécessaire d’avoir une applications mobiles pour chaque opération il suffit de composer #144# et un menu apparaît dans lequel le client choisit le service qu’il souhaite. Mais il existe aussi une application mobile disponible sur android et ios dont voici quelques captures d'écrans:
+
 ![](assets/assets/images/pds/orangemoney.png)
 
 ### SAMA Money
 
 SAMA Money est une plateforme de transfert d’argent et de paiement mobile. Il suffit de créer un compte SAMA pour pouvoir envoyer et recevoir de l’argent partout au Mali. Contrairement à Orange money, elle ne repose pas sur un réseau télécom. Les services suivants sont celles qu’elle propose:
 
-<span style="color:brown">● Envoi d’argent<br>
-● Retrait d’argent <br>
-● Paiement de services( Eau/Électricité, Abonnement Tv, Recharge téléphonique etc...)<br>
-</span>
+● Envoi d’argent
+
+● Retrait d’argent 
+
+● Paiement de services( Eau/Électricité, Abonnement Tv, Recharge téléphonique etc...)
+
+
 Les services de Sama Money sont accessibles via #600# ou à travers leur application mobile disponible sous android et ios. Pour envoyer de l’argent il faut indiquer le numéro de téléphone du bénéficiaire. Ci dessous quelques captures d'écrans des interfaces.
+
 ![](assets/assets/images/pds/samamoney.png)
+
 ### Wave
 
 C’est une plateforme indépendante aussi tout comme Sama Money, elle propose les services suivantes:
 
-<span style="color:brown">● Transfert d’argent<br>
-● Paiement de services <br>
-</span>
+● Transfert d’argent
+
+● Paiement de services 
+
+
 Ci dessous quelques captures d'écrans des interfaces de Wave:
+
 ![](assets/assets/images/pds/wave.png)
 ## Etude fonctionnelle et non fonctionnelle
 

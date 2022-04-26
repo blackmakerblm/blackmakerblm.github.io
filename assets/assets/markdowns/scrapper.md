@@ -277,13 +277,19 @@ On peut remarquer qu’il ya que des disallow partout du coup il y a déjà une 
 
 On peut noter que Jumia précise clairement de ne pas dépasser 200 requêtes par minutes sous peine d’être bloquées. 
 Présentons maintenant celui de marjane:
+
 ![](assets/assets/images/scrapper/marjanerobot.png)
+
 Ici on peut voir que les seules ressources que marjane interdits aux robots c’est tout ce qui est lié au portefeuille du client ou les informations d’un compte
  CI dessous le l’interface d’accueil de marjane
+ 
 ![](assets/assets/images/scrapper/marjaneaccueil.png)
+
 Tout comme on a précisé dans les chapitres précédents le scrapping se base sur la structure du site web, nous devons donc accéder à la structure html du site, ce qu’on peut facilement réaliser avec un ctrl+shift+i ou alors on fait clic droit, inspecter l'élément.
 Voici le code source html de la page ci dessus:
+
 ![](assets/assets/images/scrapper/marjanehtmldom.png)
+
 Nous pouvons observer le code source html ici, nous devons donc étudier profondément cette structure afin de trouver le moyen de localiser les éléments dont on veut accéder lors de notre
 grattage. Il existe plusieurs outils pour pouvoir extraire les données une fois identifié tel que BeautifulSoup qui est très connu, mais comme cité dans la section Outil et Framework on a
 décidé d’utiliser Selenium. Le choix est très logique car BeautifulSoup est très limité par exemple si on essaye d'accéder à la page marjane ensuite on souhaite saisir dans la zone de recherche
@@ -292,35 +298,48 @@ un texte pour lancer la recherche, il peut très vite se poser un problème car 
 **Snippets du scrapper marjane**
 
 Ci dessous l’image montre un bout de code du scrapper de marjane:
+
 ![](assets/assets/images/scrapper/marjanesnippet.png)
+
 Cette fonction permet de scrapper tout le contenu du site, tous les articles ou produits qui sont sur le site. Mais pour ne pas être très agressif envers le serveur de marjane il faut penser à faire cette tâche de manière répétitive à travers un ordonnanceur et être capable de recommencer le scrapping à partir de l'élément le programme s’est arrêté avant la fin de sa dernière exécution. C’est pourquoi on remarque en argument from_last (booleen).
 Il y’a donc une autre fonction :
+
 ![](assets/assets/images/scrapper/marjanesecondsnippet.png)
+
 Cette fonction est simple, elle fait appel à une autre fonction qui vérifie s’il y’a un élément qui existe dans le fichier historique, si oui on fait appel à la première fonction c’est à dire scrape
 avec les arguments from last à true et aussi l’objet json contenant les informations sur le derniers éléments gratté lors de la dernière exécutions. Enfin pour le site de marjane la dernière fonction c’est celle qui permet de gratter le site de marjane en saisissant le nom d’un produit spécifique:
+
 ![](assets/assets/images/scrapper/marjanelastsnippet.png)
 
 **Appel du scrapper à travers une requête**
 
 ![](assets/assets/images/scrapper/appelscrapper.png)
+
 Ici ce lien nous permet d’appeler le scrapper.
+
 ![](assets/assets/images/scrapper/executionscrapper.png)
+
 Ce qu’on peut voir ici sur l’image ci-dessus.
 
 **Stockage au niveau de la base de donnée**
 
 Il serait illogique d’extraire les données dans le cadre de ce projet sans les stocker, c’est pour cela à chaque article scrappée sur le site de marjane, on le stocke dans la base donnée. Il existe un modèle prédéfini par le développeur du projet de comparateur de prix. 
 La structure qu’on a due respectée se trouve sur la page suivante:
+
 ![](assets/assets/images/scrapper/scrappersnippetstockage.png)
+
 On peut constater qu’on a des classes ici, ce qui peut rappeler la notion de ORM (Object Relational Mapping) disponible dans plusieurs frameworks populaire tel que Spring boot mais aussi Django. Alors le problème est que dans le Nosql on ne parle pas de relationnel, alors comment faire ce mapping tant utile? Il ya plusieurs solutions qui ont été développées dans cette optique avec python, parmi ces solutions on retrouve Pymongo et Djongo(à ne pas confondre avec Django le framework, ici il ya O et non A). Ces solutions permettent donc de garder des classes et le mapping est fait avec le nosql au lieu du sql classique. Pour revenir à notre base de données nosql, on a donc 4 collections proposées par le développeur du comparateur de prix:
 Provenance,Catégorie,HIst Ajout et Produit.
 Après le scrapping voici la base de donnée:
+
 ![](assets/assets/images/scrapper/marjanedb.png)
 
 **Stockage du dernier élément scrappé**
 
 En ce qui concerne l’historique, et la trace voici le code qui permet de garder cette trace.
+
  ![](assets/assets/images/scrapper/scrappingfromlast.png)
+ 
  Ce code se trouve au niveau des fonctions utilitaires. L'historique est donc gardé dans un fichier .json créé par le programme s’il n’existe pas ou alors tout simplement modifié. il se présente comme défini dans l’image:
 
 ```
