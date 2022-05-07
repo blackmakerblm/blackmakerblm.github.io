@@ -68148,7 +68148,7 @@ A.f(r.d,p).eu(0)},
 p(a){A.f(this.d,"controlleur").p(0)
 this.Sx(0)},
 M(a,b){var s=null,r=this.a.c,q=t.p
-return A.cE(A.e([A.br(s,A.axt("assets/images/aliou.PNG",r*0.3,r*0.29),B.w,s,s,s,s,s,s,s,s,s,s,s),A.d2(A.e([A.b4("Mon statut: ",s,s,A.bK("Delius",B.v,s,15,s),s,s),A.b4("Embauch\xe9",s,s,A.bK("Delius",B.fa,s,15,B.l),s,s)],q),B.G,B.aO,B.B,s)],q),B.G,B.O,B.B)}}
+return A.cE(A.e([A.br(s,A.axt("assets/images/aliou.PNG",r*0.3,r*0.29),B.w,s,s,s,s,s,s,s,s,s,s,s),A.d2(A.e([A.b4("Mon statut: ",s,s,A.bK("Delius",B.v,s,15,s),s,s),A.b4("Indisponible",s,s,A.bK("Delius",B.fa,s,15,B.l),s,s)],q),B.G,B.aO,B.B,s)],q),B.G,B.O,B.B)}}
 A.SD.prototype={
 bO(){this.d_()
 this.ct()
